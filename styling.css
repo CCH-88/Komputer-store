@@ -1,0 +1,316 @@
+/* The * selector selects all elements and sets the margin and padding to 0px */
+* {
+  margin: 0px;
+  padding: 0px;
+  /*border-box tells the browser to 
+  account for any border and 
+  padding in the values you specify for 
+  an element's width and height. 
+  If you set an element's width to 100 pixels, 
+  that 100 pixels will include any border or padding you added, 
+  and the content box will shrink to absorb that extra width*/
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  /*animation: changeBg 15s linear infinite;*/
+}
+
+@keyframes changeBg {
+  0% {
+      background-color: red;
+  }
+  20%{
+      background-color: aquamarine;
+  }
+  40%{
+      background-color: azure;
+  }
+  60%{
+      background-color: currentColor;
+  }
+  80%{
+      background-color: greenyellow;
+  }
+  100%{
+      background-color: seagreen;
+  }
+}
+
+/*Flex-box container of the whole page. 
+The flex-flow STACKS the html-elements in on top of each other (in a column) */
+#flex-container {
+  display: flex;
+  flex-flow: column;
+}
+
+#row-nav{
+  order: 1;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: baseline;
+  background: black;
+
+  position: sticky;  
+
+  width: 100%;
+  
+}
+
+h1{
+  color: white;
+}
+
+h2{
+  font-size: 2rem;
+  text-decoration: none;
+  color: black
+}
+
+#upper-tiles{
+  order:2;
+  display: flex;
+  flex-flow: row;
+
+  width: 100%;
+  height: 50vh;
+}
+
+.the-bank{
+/* The Bank */
+order: 0;
+
+display: flex;
+/*Stacks the elements on top of each other*/
+flex-direction: column;
+align-self: center;
+width: 33%;
+height: 100%;
+padding-top: 1%;
+padding-left: 1%;
+
+}
+
+.balance-text{
+  align-self: center;
+}
+
+.pay-text{
+  align-self: center;
+}
+
+.button-loan{
+  align-self: center;
+  width: 80%;
+  background-color: green;
+  border: black;
+  color: black;
+  padding: 15px 32px;
+  
+  text-align: center;
+  text-decoration: none;
+  
+  
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+.work{
+  /* work */
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 100%;
+  padding-top: 1%;
+  padding-left: 1%;
+
+  /* Inside auto layout */
+  
+  flex: 1 1 auto;
+  order: 1;
+  
+  
+  }
+
+  .button-work{
+    align-self: center;
+    width: 50%;
+    background-color: blue;
+    border: black;
+    color: white;
+    padding: 15px 32px;
+    
+    text-align: center;
+    text-decoration: none;
+    
+    
+    
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button-bank{
+    align-self: center;
+    width: 50%;
+    background-color: yellow;
+    border: black;
+    color: black;
+    padding: 15px 32px;
+    
+    text-align: center;
+    text-decoration: none;
+    
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button-repay{
+    align-self: center;
+    width: 50%;
+    background-color: rgb(204, 44, 4);
+    border: black;
+    color: white;
+    padding: 15px 32px;
+    
+    text-align: center;
+    text-decoration: none;
+    
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .loan-styling{
+    align-self: center;
+    width: 80%;
+  }
+  
+  .balance-styling{
+    align-self: center;
+  }
+  
+  .pay-styling{
+    align-self: center;
+  }
+
+.laptops{
+    /* laptops */
+  
+    width: 34%;
+    height: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+    
+    
+    /* Inside auto layout */
+    flex: 1 1 auto;
+    order: 2;
+        
+}
+
+.laptop-list-styling{
+  width: 80%;
+}
+
+#lower-tiles{
+  order: 3;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 50vh;
+  
+}
+
+.picture{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  
+  /*Stacks the elements on top of each other*/
+  flex-direction: column;
+
+  width: 33%;
+  height: 100%;
+
+      
+ /* Inside auto layout */
+      
+  flex: none;
+  order: 0;
+ }
+
+img{
+     /*The object-fit CSS property sets how the content of a replaced element, 
+  such as an <img> or <video>, should be resized to fit its container.*/
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+}
+
+.description-computer{
+  display: flex;
+   /*Stacks the elements on top of each other*/
+  flex-direction: column;
+  width: 34%;
+  height: 100%;
+  padding-top: 1%;
+  padding-left: 1%;
+ 
+  /* Inside auto layout */
+      
+  flex: 1 1 auto;;
+  order: 1;
+
+}
+
+.price{
+      /* work */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 33%;
+  height: 100%;
+  padding-top: 1%;
+  padding-left: 1%;
+
+  /* Inside auto layout */
+  
+  flex: 1 1 auto;
+  order: 1;
+    
+  }
+
+  .priceHeader{
+    align-self: center;
+  }
+
+  .button-buyNow{
+    align-self: center;
+    width: 50%;
+    background-color: blue;
+    border: black;
+    color: white;
+    padding: 15px 32px;
+    
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+
+
