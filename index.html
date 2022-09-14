@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styling.css">
+  <title>The Komputer Store</title>
+</head>
+
+<body>
+
+  <div id= "flex-container">
+
+    <header id="header"> 
+      <nav id="row-nav">
+        <h1>The Komputer company</h1>   
+      </nav>  
+    </header>
+    
+    <section id="upper-tiles">
+
+        <div class ="the-bank">
+           <h2 class="h2"> Joe Banker</h2>
+           <br>
+           <br>
+           <p class="balance-text">Balance</p>
+           <br>
+           <p id="balance" class="balance-styling"> 0 </p>
+           <br>
+           <p class="balance-text">Total loane amount</p>
+           <br>
+           <p id="loanes" class="balance-styling"> 0 </p>
+           <br>
+           <input id="get-loan" class="button-loan" type="button" value="Get a loan"></input>
+           
+        </div>
+
+        <div class ="work">
+          <h2 class="h2"> Work </h2>  
+           <br>
+           <br>
+           <p class="pay-text">Pay</p>
+           <br>
+           <p id="pay" class="pay-styling"> 0 </p>
+           <br>
+           <input id="work" class="button-work" type="button" value="Work"></input>
+           <br>
+           <input id="bank" class="button-bank" type="button" value="Bank"></input>
+           <br>
+           <input id="repay" class="button-repay" type="button" value="Repay"></input>
+          
+        </div>
+        
+
+        <div class ="laptops">
+          <h2 class="h2"> Laptops</h2>
+          <br> 
+          <select name="latop-names" id="laptoplist" class="laptop-list-styling"></select>
+          <br>
+          <br>
+          <h3 class="h3"> Features</h3>
+          <p id="features"> </p>
+          <br>
+          
+          
+        </div>
+    </section>
+
+    <section id="lower-tiles">
+
+        <div class ="picture">
+          <img id="laptopImg" alt="Picture not found" width="400" height ="400">
+        </div>
+
+        <div class ="description-computer">
+          <h2 id="laptopName"></h2>
+          <br>
+          <p id="descriptionLaptop"></p>
+        </div>
+
+        <div class ="price">
+          <h2 class= "priceHeader" id="priceH2"></h2>
+          <br>
+          <br>          
+          <input class="button-buyNow" id = "buyNow" type = "button" value="Buy now"> </input>
+          <br>
+          
+        </div>
+    </section>
+
+
+  </div>
+      
+  <script src="laptops.js"></script>
+  <script src="theBanker.js"></script>
+  <script src="work.js"></script>
+</body>
+
+</html>
