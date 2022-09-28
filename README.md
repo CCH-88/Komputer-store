@@ -1,8 +1,8 @@
-# Assignment 1 - Komputer Store
+# Komputer Store
 
 ## Description
 
-Noroff assigment 1 Komputer store 
+Noroff assigment 1 Komputer store. Work in progress...
 
 Showing a komputer store from an API in a simpel HTML page with CSS-styling
 
@@ -16,7 +16,7 @@ https://gitlab.com/CCH-88/assignment1-komputer-store.git
 
 ## License
 
-You are to share 50% of the profit with the authors...
+Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## Author
 Christian Casper Hofma,
